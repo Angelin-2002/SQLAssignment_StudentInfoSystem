@@ -417,7 +417,7 @@ group by course_name
 
 /*13. Calculate the average payment amount made by students. Use JOIN operations between the "Students" table and the "Payments" table and GROUP BY to calculate the average. */
 
-  select  s.student_id, s.first_name , s.last_name ,Avg(p.amount) as [Average amount] 
+select  s.student_id, s.first_name , s.last_name ,Avg(p.amount) as [Average amount] 
 from Students s 
 left join Payments p 
 on s.student_id = p.student_id
